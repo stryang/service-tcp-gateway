@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: service-tcp-gateway
+
+
+server:
+  port: 8080
+
+rocketmq:
+  name-server: 192.168.5.209:9876
+  # Éú²úÕßÅäÖÃ
+  producer:
+    group: ${spring.application.name}
+
