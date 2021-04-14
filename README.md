@@ -1,7 +1,7 @@
 # service-tcp-gateway
 
 ## 项目架构图 
-![](./images/service-tcp-gateway.png)
+![](./images/service-tcp-gateway.jpg)
 
 
 
