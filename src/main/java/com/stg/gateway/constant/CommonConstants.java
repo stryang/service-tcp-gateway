@@ -53,4 +53,8 @@ public interface CommonConstants {
 	 */
 	Integer WEBSOCKET_MESSAGE_TYPE_USER = 3;
 
+	/**
+	 * 保存日志
+	 */
+	Integer MESSAGE_SAVE = 1;
 }

@@ -1,14 +1,31 @@
 spring:
   application:
     name: service-tcp-gateway
-
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.5.209:3306/stg?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: xgcoolfare!QAZ2021
 
 server:
   port: 8080
 
 rocketmq:
   name-server: 192.168.5.209:9876
-  # Éú²úÕßÅäÖÃ
   producer:
     group: ${spring.application.name}
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    auto-mapping-behavior: full
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:mapper/**/*Mapper.xml
+  global-config:
+    # é€»è¾‘åˆ é™¤é…ç½®
+    db-config:
+      # åˆ é™¤å‰
+      logic-not-delete-value: 1
+      # åˆ é™¤å
+      logic-delete-value: 0
 

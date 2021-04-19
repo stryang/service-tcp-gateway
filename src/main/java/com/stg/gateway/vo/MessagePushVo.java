@@ -15,5 +15,6 @@ public class MessagePushVo {
     private String form;
     private List<String> to;
     private Integer type;
+    private Integer save;
 
 }
